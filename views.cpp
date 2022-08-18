@@ -128,20 +128,37 @@ void bottomView(struct Node* root)
 }
 int main()
 {
-    root=RInsert(root,30);
+    root=RInsert(root,30);           
     root=RInsert(root,20);
     root=RInsert(root,40);
     root=RInsert(root,10);
     root=RInsert(root,50);
     root=RInsert(root,35);
-  //  cout<<root->lchild->data<<" ";
-   // cout<<root->rchild->data<<" ";
-   // Inorder(root);
-   // cout<<endl;
-   // cout<<root->lchild->data;
-  // leftView(root);
+    root=RInsert(root,25);
+   cout<<"leftView of the tree :";
+   leftView(root);
    cout<<endl;
- //  rightView(root);
+   cout<<"Rightview of the tree :" ;
+   rightView(root);
+   cout<<endl;
+   cout<<"BottomView of the tree :";
    bottomView(root);
     return 0;
 }
+
+
+/* 
+OUTPUT:
+
+    TREE:       30
+              /    \
+             20    40
+            / \    / \
+           10  25 35 50
+           
+leftView of the tree :30 20 10 
+Rightview of the tree :30 40 50 
+BottomView of the tree :10 25 35 50 
+
+
+*/
