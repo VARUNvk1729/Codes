@@ -136,7 +136,7 @@ int main()
     root=RInsert(root,35);
     root=RInsert(root,25);
     /*
-        TREE:       30
+        TREE:   30
               /    \
              20    40
             / \    / \
